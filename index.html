@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jednostavna Web Aplikacija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-form">
+        <input type="text" id="username" placeholder="Korisničko ime">
+        <input type="password" id="password" placeholder="Lozinka">
+        <input type="checkbox" id="remember"> Zapamti me
+        <button onclick="login()">Prijavi se</button>
+    </div>
+
+    <div id="content" style="display: none;">
+        <input type="text" id="title" placeholder="Naslov">
+        <select id="option">
+            <option value="opcija1">Opcija 1</option>
+            <option value="opcija2">Opcija 2</option>
+            <option value="opcija3">Opcija 3</option>
+        </select>
+        <textarea id="text"></textarea>
+        <button onclick="saveData()">Objavi</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
